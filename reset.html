@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reset</title>
+	<script src= 
+	"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> 
+		</script> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script src= 
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> 
+    </script>
+	<script>  
+function validateform1(){   
+var password=document.myform.password.value;  
+ var firstpassword=document.myform.password.value;  
+var secondpassword=document.myform.password2.value;   
+ if(password.length<6){  
+alert("Password must be at least 6 characters!!");  
+  return false;  
+  } 
+if(firstpassword==secondpassword){  
+return true;  
+}  
+else{  
+alert("Please Enter The Same Password!!");  
+return false;  
+}   
+}
+</script> 
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button  type="button" class="navbar-toggle"
+				data-toggle="collapse" data-target="#menu">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+		<a href="#" class="navbar-brand">HOTEL MANAGEMENT SYSTEM</a></div>
+		<div  class="collapse navbar-collapse" id="menu">
+			<ul class="nav navbar-nav navbar-right"> 
+			<li class="active"><a href="frnt.html"><span>Home</span></a></li>
+			<li><a href="#"><span>Setting</span></a></li>
+			</ul>
+		</div>
+	</div>
+	</nav>
+	<div class="wrapper">
+	<form class="form-signin" method="POST">
+		<h2 style="color: dodgerblue;">Reset Password</h2>
+		<hr>
+		<div class="form-group">
+		<label>Old Password</label>
+		<input type="password" class="form-control" name="password" placeholder="Old Password" required=""/>
+		</div>
+		<div class="form-group">
+			<label>New Password</label>
+			<input type="password" class="form-control" name="password" placeholder="Enter New Password" required=""/>
+			</div>      
+			<div class="form-group">
+				<label>Confirm Password</label>
+				<input type="password" class="form-control" name="password1" placeholder="Enter The Same Password" required=""/>
+				</div>            
+		<input type="submit" value="submit">
+		</form>
+		</div>
+</body>
+<style>
+	body{
+  background:url("nature.jpg");
+  background-size: cover;
+   }
+   .wrapper {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+   
+.form-signin {
+	max-width: 300px;
+	padding: 15px 35px 45px;
+	margin: 0 auto;
+	background-color: white;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.form-signin .form-control {
+	position: relative;
+	font-size: 16px;
+	height: auto;
+	padding: 6px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ 
+.form-signin .form-control:focus {
+	z-index: 2;
+}
+ 
+.form-signin  input[type=password] 
+	
+	{
+		 padding: 10px; 
+		 display: inline-block;
+		border: 1px solid;
+	}
+	.form-signin input[type=submit]
+	{
+		width: 100%;
+		padding: 5px 5px;
+		background-color: seagreen;
+		font-size: 20px;
+}
+ hr{
+	 color: black;
+ }
+</style>
+</html>
